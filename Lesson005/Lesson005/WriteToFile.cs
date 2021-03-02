@@ -12,12 +12,19 @@ namespace Lesson005
         private string SomeText;
         public void ReadText()
         {
-            Console.WriteLine("Введите любой текст");
+            Console.WriteLine("Введите любой текст");            
             SomeText = Console.ReadLine();
         }
         public void WriteTextInFile(string Path001)
         {
             File.WriteAllText(Path001, SomeText);
+        }
+        public void ShowFile(string Path001)
+        {
+            Console.WriteLine();
+            Console.WriteLine("Содержимое файла:");            
+            string FileContent = File.ReadAllText(Path001);
+            Console.WriteLine(FileContent);
         }
     }
 }

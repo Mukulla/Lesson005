@@ -10,17 +10,17 @@ namespace Lesson005
     {
         static void Main(string[] args)
         {
-            int CountPars = 1;
+            int CountPars = 2;
             string[] Denuntiatio = new string[]
             {
                 "Запись произвольного текста в файл",
-                "Сумма всех чисел в строке",
+                "Запись даты в файл построчно",
                 "Определение времени года",
                 "Вычисление числа Фибоначчи"
             };
             //Console.WriteLine(System.Text.Encoding.Default.HeaderName);
             //Цикл-обработчик каждого задания
-            for (int i = 0; i < CountPars; ++i)
+            for (int i = 1; i < CountPars; ++i)
             {
                 //Вывод части и названия задания
                 Console.WriteLine($"Часть {i + 1}: {Denuntiatio[i]}");
@@ -31,9 +31,12 @@ namespace Lesson005
                         WriteToFile Writter = new WriteToFile();
                         Writter.ReadText();
                         Writter.WriteTextInFile("File001.txt");
+                        Writter.ShowFile("File001.txt");
                         break;
                     case 1:
-                        
+                        AdderTime CuTime = new AdderTime();
+                        CuTime.WriteTime("startup.txt");
+                        CuTime.ShowFile("startup.txt");
                         break;
                     case 2:
                         
