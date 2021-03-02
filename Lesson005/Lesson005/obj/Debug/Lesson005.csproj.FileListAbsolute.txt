@@ -1,0 +1,7 @@
+C:\Git\Lessons\Lesson005\Lesson005\Lesson005\bin\Debug\Lesson005.exe.config
+C:\Git\Lessons\Lesson005\Lesson005\Lesson005\bin\Debug\Lesson005.exe
+C:\Git\Lessons\Lesson005\Lesson005\Lesson005\bin\Debug\Lesson005.pdb
+C:\Git\Lessons\Lesson005\Lesson005\Lesson005\obj\Debug\Lesson005.csprojAssemblyReference.cache
+C:\Git\Lessons\Lesson005\Lesson005\Lesson005\obj\Debug\Lesson005.csproj.CoreCompileInputs.cache
+C:\Git\Lessons\Lesson005\Lesson005\Lesson005\obj\Debug\Lesson005.exe
+C:\Git\Lessons\Lesson005\Lesson005\Lesson005\obj\Debug\Lesson005.pdb
