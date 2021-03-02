@@ -10,17 +10,16 @@ namespace Lesson005
     {
         static void Main(string[] args)
         {
-            int CountPars = 2;
+            int CountPars = 3;
             string[] Denuntiatio = new string[]
             {
                 "Запись произвольного текста в файл",
                 "Запись даты в файл построчно",
-                "Определение времени года",
-                "Вычисление числа Фибоначчи"
+                "Запись набора числе в бинарный файл"
             };
             //Console.WriteLine(System.Text.Encoding.Default.HeaderName);
             //Цикл-обработчик каждого задания
-            for (int i = 1; i < CountPars; ++i)
+            for (int i = 2; i < CountPars; ++i)
             {
                 //Вывод части и названия задания
                 Console.WriteLine($"Часть {i + 1}: {Denuntiatio[i]}");
@@ -38,13 +37,14 @@ namespace Lesson005
                         CuTime.WriteTime("startup.txt");
                         CuTime.ShowFile("startup.txt");
                         break;
-                    case 2:
-                        
-                        break;
                 }
-                if (i == 3)
+                if (i == 2)
                 {
-                    
+                    WriteToBinare Binarrer = new WriteToBinare();
+                    Binarrer.ReadNumbers();
+                    Binarrer.Write("Numbers.bin");
+                    Binarrer.Show("Numbers.bin");
+
                     Console.WriteLine();
                     Console.WriteLine("Все части пройдены");
                     Console.WriteLine("Для выхода нажмите любую клавишу");
