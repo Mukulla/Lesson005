@@ -19,7 +19,7 @@ namespace Lesson005
             };
             //Console.WriteLine(System.Text.Encoding.Default.HeaderName);
             //Цикл-обработчик каждого задания
-            for (int i = 2; i < CountPars; ++i)
+            for (int i = 0; i < CountPars; ++i)
             {
                 //Вывод части и названия задания
                 Console.WriteLine($"Часть {i + 1}: {Denuntiatio[i]}");

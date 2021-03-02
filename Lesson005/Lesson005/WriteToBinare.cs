@@ -19,7 +19,9 @@ namespace Lesson005
         public void Write(string Path001)
         {
             BinaryFormatter Binarrer = new BinaryFormatter();
-            Binarrer.Serialize(new FileStream(Path001, FileMode.OpenOrCreate), Numbers);
+            FileStream File001 = new FileStream(Path001, FileMode.OpenOrCreate);
+            Binarrer.Serialize(File001, Numbers);
+            File001.Close();
         }
         public void Show(string Path001)
         {
@@ -27,9 +29,11 @@ namespace Lesson005
             Console.WriteLine("Содержимое файла:");
             
             BinaryFormatter Binarrer = new BinaryFormatter();
-            Binares FileNumbers = (Binares)Binarrer.Deserialize(new FileStream(Path001, FileMode.Open));
+            FileStream File001 = new FileStream(Path001, FileMode.OpenOrCreate);
+            Binares FileNumbers = (Binares)Binarrer.Deserialize(File001);
+            File001.Close();
 
-            Console.WriteLine(FileNumbers);
+            Console.WriteLine(FileNumbers.BinareNumbers);
         }
     }
 }
